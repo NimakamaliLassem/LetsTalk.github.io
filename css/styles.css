@@ -12,24 +12,23 @@ body {
     overflow: hidden;
 }
 
-header {
-    background: #007BFF;
+.hero {
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    padding: 100px 0;
+    text-align: center;
 }
 
-header h1 {
-    text-align: center;
-    margin: 0;
-    font-size: 36px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-header p {
-    text-align: center;
-    font-size: 18px;
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
+
 
 #problem, #solution, #features, #cta {
     padding: 20px 0;
@@ -110,3 +109,19 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+section:nth-child(1) { animation-delay: 0.2s; }
+section:nth-child(2) { animation-delay: 0.4s; }
+section:nth-child(3) { animation-delay: 0.6s; }
+section:nth-child(4) { animation-delay: 0.8s; }
