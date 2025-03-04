@@ -20,3 +20,4 @@ form.addEventListener('submit', async (e) => {
         formStatus.textContent = 'Oops! Something went wrong. Please try again.';
     }
 });
+
