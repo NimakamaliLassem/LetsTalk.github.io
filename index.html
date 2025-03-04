@@ -37,23 +37,23 @@
 					<div class="col-md-6">
 						<div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
 							<h1 class="display-3">Empowering European Companies with AI-Driven Legal Research</h1>
-							<button class="btn btn-outline-secondary mt-4 text-uppercase">Know more</button>
+							<a href="#email" class="btn btn-outline-secondary mt-4 text-uppercase">Know more</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<div id="problem" class="py-7 mt-5" style="height: 70vh;">
+		<div id="problem" class="py-7 mt-4" style="height: 70vh;">
 			<div class="container-xl h-100">
 				<div class="row h-100 align-items-center">
-					<div class="col-md-6 text-center">
+					<div class="col-md-6 text-center show">
 						<h5 class="fw-bold">The problem</h5>
 						<p class="text-muted text-center">
 							European companies often struggle to navigate the complex landscape of national and EU laws. Finding relevant legal information and similar cases is time-consuming and costly.
 						</p>
 					</div>
-					<div class="col-md-6 text-center">
+					<div class="col-md-6 text-center show">
 						<h5 class="fw-bold">Our solution</h5>
 						<p class="text-muted text-center">
 							UPCLawAI is a cutting-edge tool that uses AI to help companies quickly find relevant laws and similar legal cases across Europe. Save time, reduce costs, and stay compliant with ease.
@@ -68,7 +68,7 @@
 			<div class="container">
 				<div class="row g-5 py-2 justify-content-center">
 					<div class="col-md-4 ">
-						<div class="card border-light text-center shadow block">
+						<div class="card border-light text-center shadow pop">
 							<div class="card-body">
 							<h5 class="card-title">Search Laws</h5>
 							<p class="card-text">Find relevant national and EU laws quickly.</p>
@@ -76,7 +76,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="card border-light text-center shadow block" >
+						<div class="card border-light text-center shadow pop" >
 							<div class="card-body">
 							<h5 class="card-title">Case Analysis</h5>
 							<p class="card-text">AI-powered analysis of similar legal cases.</p>
@@ -84,7 +84,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="card border-light text-center shadow block" >
+						<div class="card border-light text-center shadow pop" >
 						<div class="card-body">
 							<h5 class="card-title">User-Friendly</h5>	
 							<p class="card-text">Designed for businesses of all sizes.</p>
@@ -98,19 +98,21 @@
 
     
     <!-- Email Form -->
-    <div class="container-fluid w-100 py-5 mt-5 grad m-0" style="height: 50vh;">
+    <div id="email" class="container-fluid w-100 py-5 mt-5 grad m-0" style="height: 50vh;">
       <div class="row g-5 py-5 justify-content-center">
         <div class="col-md-8">
           <h3 class="fw-bold">Interested in UPCLawAI?</h2>
         <p class="text-muted">Join us in revolutionizing legal research for European companies. Enter your email to stay updated or explore investment opportunities.</p>
         
         <form id="email-form" action="https://formspree.io/f/xldgqaja" method="POST">
-          <div class="input-group mb-3 g-2">
-            <input type="text" class="form-control" placeholder="Enter your mail" aria-label="Enter your mail" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="submit" id="button-addon2">SEND</button>
-            </div>
-          </div>
+			<div class="row g-1">
+				<div class=" col-10 m-0">
+					<input type="text" class="form-control" placeholder="Enter your mail" aria-label="Enter your mail" aria-describedby="button-addon2">
+				</div>
+				<div class="col m-0">
+					<button class="btn btn-outline-secondary" type="submit" id="button-addon2">SEND</button>
+				</div>
+		  </div>
         </form>
           
         <p id="form-status"></p>
