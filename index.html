@@ -1,131 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-			crossorigin="anonymous"
-		/>
-    <script src="/js/script.js"></script>
-	<link rel="stylesheet" href="/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk - Skip the Small Talk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Let's Talk</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#register" class="cta-button">Get Started</a>
+            </div>
+        </nav>
+    </header>
 
-		<title> UPCLawAI | Welcome</title>
-	</head>
-	<body>
-		<!-- Navigation -->
-		<div class="navbar navbar-expand-lg mt-4">
-			<div class="container">
-				<a href="#" class="navbar-brand fs-3">UPCLawAI</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</div>
-		</div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Skip the Small Talk</h1>
+                <p>Connect meaningfully with people who share your interests through guided conversations about trending topics.</p>
+                <button class="cta-button" onclick="scrollToRegister()">Join Now</button>
+            </div>
+            <div class="hero-image">
+                <div class="chat-bubble">Did you see the latest space mission? 🚀</div>
+                <div class="chat-bubble">I'm actually following it! What do you think about...</div>
+            </div>
+        </section>
 
-		<!-- Header -->
-		<header class="header pt-7">
-			<div class="container-xl">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="image-container mb-5 px-4">
-							<img src="/main.webp" alt="" class="img-fluid" />
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
-							<h1 class="display-3">Empowering European Companies with AI-Driven Legal Research</h1>
-							<a href="#email" class="btn btn-outline-secondary mt-4 text-uppercase">Know more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+        <section id="features" class="features">
+            <h2>Why Choose Let's Talk?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👋</div>
+                    <h3>No More Awkward Silence</h3>
+                    <p>Our AI-powered conversation starters keep the chat flowing naturally.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Match by Interests</h3>
+                    <p>Connect with people who share your passion for specific topics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Stay Current</h3>
+                    <p>Discuss trending topics and latest events with your matches.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Meaningful Connections</h3>
+                    <p>Build real relationships based on shared interests and values.</p>
+                </div>
+            </div>
+        </section>
 
-		<div id="problem" class="py-7 mt-4" style="height: 70vh;">
-			<div class="container-xl h-100">
-				<div class="row h-100 align-items-center">
-					<div class="col-md-6 text-center show">
-						<h5 class="fw-bold">The problem</h5>
-						<p class="text-muted text-center">
-							European companies often struggle to navigate the complex landscape of national and EU laws. Finding relevant legal information and similar cases is time-consuming and costly.
-						</p>
-					</div>
-					<div class="col-md-6 text-center show">
-						<h5 class="fw-bold">Our solution</h5>
-						<p class="text-muted text-center">
-							UPCLawAI is a cutting-edge tool that uses AI to help companies quickly find relevant laws and similar legal cases across Europe. Save time, reduce costs, and stay compliant with ease.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+        <section id="how-it-works" class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Profile</h3>
+                    <p>Tell us about your interests and what makes you unique.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Match with Others</h3>
+                    <p>We'll connect you with people who share your interests.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Talking</h3>
+                    <p>Get personalized conversation prompts and start meaningful discussions.</p>
+                </div>
+            </div>
+        </section>
 
+        <section id="register" class="register">
+            <h2>Ready to Skip the Small Talk?</h2>
+            <form id="signup-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" class="cta-button">Create Account</button>
+            </form>
+        </section>
+    </main>
 
-		<div id="features" class="py-7 mt-4" style="height: 60vh;">
-			<div class="container">
-				<div class="row g-5 py-2 justify-content-center">
-					<div class="col-md-4 ">
-						<div class="card border-light text-center shadow pop">
-							<div class="card-body">
-							<h5 class="card-title">Search Laws</h5>
-							<p class="card-text">Find relevant national and EU laws quickly.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card border-light text-center shadow pop" >
-							<div class="card-body">
-							<h5 class="card-title">Case Analysis</h5>
-							<p class="card-text">AI-powered analysis of similar legal cases.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card border-light text-center shadow pop" >
-						<div class="card-body">
-							<h5 class="card-title">User-Friendly</h5>	
-							<p class="card-text">Designed for businesses of all sizes.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <footer>
+        <p>&copy; 2025 Let's Talk. All rights reserved.</p>
+    </footer>
 
-
-
-    
-    <!-- Email Form -->
-    <div id="email" class="container-fluid w-100 py-5 mt-5 grad m-0" style="height: 50vh;">
-      <div class="row g-5 py-5 justify-content-center">
-        <div class="col-md-8">
-          <h3 class="fw-bold">Interested in UPCLawAI?</h2>
-        <p class="text-muted">Join us in revolutionizing legal research for European companies. Enter your email to stay updated or explore investment opportunities.</p>
-        
-        <form id="email-form" action="https://formspree.io/f/xldgqaja" method="POST">
-			<div class="row g-1">
-				<div class=" col-10 m-0">
-					<input type="text" class="form-control" placeholder="Enter your mail" aria-label="Enter your mail" aria-describedby="button-addon2">
-				</div>
-				<div class="col m-0">
-					<button class="btn btn-outline-secondary" type="submit" id="button-addon2">SEND</button>
-				</div>
-		  </div>
-        </form>
-          
-        <p id="form-status"></p>
-        </div>
-      </div>
-    </div>
-
-
-		<!-- Footer -->
-		<footer class="page-footer p-3 m-0 color1-background">
-			<p class="footer-copyright text-center small">Copyright &copy; 2025 UPCLawAI. All rights reserved</p>
-		</footer>
-	</body>
+    <script src="main.js"></script>
+</body>
 </html>
-
-
