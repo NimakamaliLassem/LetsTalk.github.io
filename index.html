@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Talk - Skip the Small Talk</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">Let's Talk</div>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#how-it-works">How it Works</a>
-                <a href="#register" class="cta-button">Get Started</a>
-            </div>
-        </nav>
+      <nav>
+	<div class="logo">Let's Talk</div>
+	<div class="nav-links">
+	  <a href="#features">Features</a>
+	  <a href="#how-it-works">How it Works</a>
+	  <a href="#register" class="cta-button">Get Started</a>
+	</div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Skip the Small Talk</h1>
-                <p>Connect meaningfully with people who share your interests through guided conversations about trending topics.</p>
-                <button class="cta-button" onclick="scrollToRegister()">Join Now</button>
-            </div>
-            <div class="hero-image">
-                <div class="chat-bubble">Did you see the latest space mission? 🚀</div>
-                <div class="chat-bubble">I'm actually following it! What do you think about...</div>
-            </div>
-        </section>
+      <section class="hero">
+	<div class="hero-content">
+	  <h1>Skip the Small Talk</h1>
+	  <p>Connect meaningfully with people who share your interests through guided conversations about trending topics.</p>
+	  <button class="cta-button" onclick="scrollToRegister()">Join Now</button>
+	</div>
+	<div class="hero-image">
+	  <div class="chat-bubble">Did you see the latest space mission? 🚀</div>
+	  <div class="chat-bubble">I'm actually following it! What do you think about...</div>
+	</div>
+      </section>
 
-        <section id="features" class="features">
-            <h2>Why Choose Let's Talk?</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">👋</div>
-                    <h3>No More Awkward Silence</h3>
-                    <p>Our AI-powered conversation starters keep the chat flowing naturally.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Match by Interests</h3>
-                    <p>Connect with people who share your passion for specific topics.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Stay Current</h3>
-                    <p>Discuss trending topics and latest events with your matches.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Meaningful Connections</h3>
-                    <p>Build real relationships based on shared interests and values.</p>
-                </div>
-            </div>
-        </section>
+      <section id="features" class="features">
+	<h2>Why Choose Let's Talk?</h2>
+	<div class="feature-grid">
+	  <div class="feature-card">
+	    <div class="feature-icon">👋</div>
+	    <h3>No More Awkward Silence</h3>
+	    <p>Our AI-powered conversation starters keep the chat flowing naturally.</p>
+	  </div>
+	  <div class="feature-card">
+	    <div class="feature-icon">🎯</div>
+	    <h3>Match by Interests</h3>
+	    <p>Connect with people who share your passion for specific topics.</p>
+	  </div>
+	  <div class="feature-card">
+	    <div class="feature-icon">📱</div>
+	    <h3>Stay Current</h3>
+	    <p>Discuss trending topics and latest events with your matches.</p>
+	  </div>
+	  <div class="feature-card">
+	    <div class="feature-icon">🤝</div>
+	    <h3>Meaningful Connections</h3>
+	    <p>Build real relationships based on shared interests and values.</p>
+	  </div>
+	</div>
+      </section>
 
-        <section id="how-it-works" class="how-it-works">
-            <h2>How It Works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Create Your Profile</h3>
-                    <p>Tell us about your interests and what makes you unique.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Match with Others</h3>
-                    <p>We'll connect you with people who share your interests.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Start Talking</h3>
-                    <p>Get personalized conversation prompts and start meaningful discussions.</p>
-                </div>
-            </div>
-        </section>
+      <section id="how-it-works" class="how-it-works">
+	<h2>How It Works</h2>
+	<div class="steps">
+	  <div class="step">
+	    <div class="step-number">1</div>
+	    <h3>Create Your Profile</h3>
+	    <p>Tell us about your interests and what makes you unique.</p>
+	  </div>
+	  <div class="step">
+	    <div class="step-number">2</div>
+	    <h3>Match with Others</h3>
+	    <p>Touch other's phone using NFC connectivity</p>
+	  </div>
+	  <div class="step">
+	    <div class="step-number">3</div>
+	    <h3>Start Talking</h3>
+	    <p>Get personalized conversation prompts and start meaningful discussions.</p>
+	  </div>
+	</div>
+      </section>
 
-        <section id="register" class="register">
-            <h2>Ready to Skip the Small Talk?</h2>
-            <form id="signup-form" onsubmit="handleSubmit(event)">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit" class="cta-button">Create Account</button>
-            </form>
-        </section>
+      <section id="register" class="register">
+	<h2>Ready to Skip the Small Talk?</h2>
+	<form id="signup-form" action="https://formspree.io/f/xldgqaja" method="POST">
+	  <input name="full name" type="text" placeholder="Full Name" required>
+	  <input name="email" type="email" placeholder="Email Address" required>
+	  <button type="submit" class="cta-button">Create Account</button>
+	</form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Let's Talk. All rights reserved.</p>
+      <p>&copy; 2025 Let's Talk. All rights reserved.</p>
     </footer>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
