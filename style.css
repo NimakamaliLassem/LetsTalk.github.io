@@ -1,9 +1,12 @@
 :root {
-  --primary-color: #ffb703;
-  --secondary-color: #fb8500;
-  --background-color: #f9fafc;
-  --text-color: #023047;
-  --card-background: #f9fafc;
+  --cta-color: #ffb703;
+  --alternative-color: #fb8500;
+  --secondary-color: #219ebc;
+  --supportive-background: #8ecae6;
+  --neutral-background: #ffffff;
+  --text-color: #333333;
+  --brand-color: #023047;
+  --main-background: #f9fafc;
   --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -44,8 +47,12 @@ nav {
   color: var(--text-color);
 }
 
+.nav-links a.cta-button {
+  color:white;
+}
+
 .cta-button {
-  background-color: var(--primary-color);
+  background-color: var(--cta-color);
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -56,7 +63,7 @@ nav {
 }
 
 .cta-button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--alternative-color);
 }
 
 .hero {
@@ -65,7 +72,7 @@ nav {
   justify-content: space-between;
   min-height: 100vh;
   padding: 5rem 5%;
-  background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
+  background: linear-gradient(135deg, --main-background 0%, --neutral-background 100%);
 }
 
 .hero-content {
@@ -82,7 +89,7 @@ nav {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #666;
+  color: --text-color;
 }
 
 .hero-image {
@@ -112,13 +119,20 @@ nav {
   50% { transform: translateY(-10px); }
 }
 
-.features {
+.component {
   padding: 5rem 5%;
-  background-color: var(--card-background);
+  text-align: center;
 }
 
-.features h2 {
-  text-align: center;
+.component:nth-child(even) {
+  background-color: var(--main-background);
+}
+
+.component:nth-child(odd) {
+  background-color: var(--neutral-background);
+}
+
+#features h2 {
   margin-bottom: 3rem;
 }
 
@@ -146,11 +160,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-.how-it-works {
-  padding: 5rem 5%;
-  text-align: center;
-}
-
 .steps {
   display: flex;
   justify-content: space-around;
@@ -168,7 +177,7 @@ nav {
 .step-number {
   width: 40px;
   height: 40px;
-  background-color: var(--primary-color);
+  background-color: var(--cta-color);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -178,11 +187,6 @@ nav {
   font-weight: bold;
 }
 
-.register {
-  padding: 5rem 5%;
-  text-align: center;
-  background-color: var(--card-background);
-}
 
 form {
   max-width: 400px;
