@@ -3,6 +3,7 @@
   --alternative-color: #fb8500;
   --secondary-color: #219ebc;
   --supportive-background: #8ecae6;
+  --success-color: #4caf50;
   --neutral-background: #ffffff;
   --text-color: #333333;
   --brand-color: #023047;
@@ -114,6 +115,14 @@ nav {
   animation-delay: 1.5s;
 }
 
+.chat-bubble:nth-child(1) {
+  background-color: var(--success-color);
+}
+
+.chat-bubble:nth-child(2) {
+  background-color: var(--supportive-background);
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -130,6 +139,57 @@ nav {
 
 .component:nth-child(odd) {
   background-color: var(--neutral-background);
+}
+
+#testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
 }
 
 #features h2 {
@@ -177,7 +237,7 @@ nav {
 .step-number {
   width: 40px;
   height: 40px;
-  background-color: var(--cta-color);
+  background-color: var(--secondary-color);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -233,4 +293,43 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f1f1f1;
+}
+
+.faq-answer {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 10px 0;
+}
+
+/* Active state for open answers */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust based on your content */
+    padding: 15px;
 }

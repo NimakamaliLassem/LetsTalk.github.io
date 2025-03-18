@@ -47,3 +47,21 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            faqItem.classList.toggle('active');
+
+            // Close other open FAQ items
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    otherQuestion.parentElement.classList.remove('active');
+                }
+            });
+        });
+    });
+});
