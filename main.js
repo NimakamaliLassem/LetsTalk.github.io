@@ -65,3 +65,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Fullscreen demo functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const fullscreenBtn = document.querySelector('.fullscreen-btn');
+  const demoWrapper = document.querySelector('.demo-wrapper');
+
+  if (fullscreenBtn && demoWrapper) {
+    fullscreenBtn.addEventListener('click', function() {
+      demoWrapper.classList.toggle('fullscreen');
+      
+      // Prevent scrolling when in fullscreen
+      document.body.style.overflow = demoWrapper.classList.contains('fullscreen') ? 'hidden' : '';
+      
+      // Update button aria-label
+      const isFullscreen = demoWrapper.classList.contains('fullscreen');
+      fullscreenBtn.setAttribute('aria-label', isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen');
+    });
+
+    // Allow ESC key to exit fullscreen
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && demoWrapper.classList.contains('fullscreen')) {
+        demoWrapper.classList.remove('fullscreen');
+        document.body.style.overflow = '';
+        fullscreenBtn.setAttribute('aria-label', 'Enter fullscreen');
+      }
+    });
+  }
+});

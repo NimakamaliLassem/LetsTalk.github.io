@@ -6,6 +6,7 @@
     <title>Let's Talk</title>
     <link rel="icon" type="image/x-icon" href="logos/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/5.31.0/gradio.js"></script>
   </head>
   <body>
     <header>
@@ -16,6 +17,7 @@
 	<div class="nav-links">
 	  <a href="#features">Features</a>
 	  <a href="#how-it-works">How it Works</a>
+	  <a href="#demo">Demo</a>
 	  <a href="#register" class="cta-button">Get Started</a>
 	</div>
       </nav>
@@ -100,6 +102,25 @@
 	    <p>Get personalized conversation prompts and start meaningful discussions.</p>
 	  </div>
 	</div>
+      </section>
+
+      <section id="demo" class="component">
+        <h2>Try Our Demo</h2>
+        <div class="demo-container">
+          <div class="demo-wrapper">
+            <iframe
+              src="https://nimakl-letstalk.hf.space"
+              frameborder="0"
+              width="850"
+              height="450"
+            ></iframe>
+            <button class="fullscreen-btn" aria-label="Toggle fullscreen">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M3 3h7v2H5v5H3V3m18 0v7h-2V5h-5V3h7M3 21v-7h2v5h5v2H3m18-7v7h-7v-2h5v-5h2" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       <section id="register" class="component">
